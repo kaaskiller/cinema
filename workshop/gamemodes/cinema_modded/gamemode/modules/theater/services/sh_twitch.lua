@@ -26,7 +26,7 @@ if (CLIENT) then
 	local TWITCH_URL = "https://player.twitch.tv/?channel=%s&parent=pixeltailgames.com"
 	local THEATER_JS = [[
 		var checkerInterval = setInterval(function() {
-			var matureAccept = document.querySelectorAll("[data-a-target=\"player-overlay-mature-accept\"]")[0]
+			var matureAccept = document.querySelectorAll("[data-a-target=\"content-classification-gate-overlay-start-watching-button\"]")[0]
 			if (!!matureAccept) {matureAccept.click(); return;}
 
 			var player = document.getElementsByTagName('video')[0];
